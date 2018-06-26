@@ -27,13 +27,14 @@
     "body-parser": "~1.17.1",
     "chalk": "~1.1",
     "compression": "~1.6",
-    "express": "~4.15.2",
+    "express": "~4.16.0",
     "express-hbs": "~1.0",
     "http-headers": "^3.0.1",
     "moment": "~2.15.2",
     "pa11y-webservice": "^2.3.0",
     "pa11y-webservice-client-node": "^1.2.1",
-    "underscore": "~1.8"
+    "underscore": "~1.8",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "bower": "~1.7",
@@ -48,6 +49,9 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "make ci"
-  }
+    "test": "make ci",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
