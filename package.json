@@ -28,7 +28,7 @@
     "chalk": "~1.1",
     "compression": "~1.6",
     "express": "~4.15.2",
-    "express-hbs": "~1.0",
+    "express-hbs": "~2.3.0",
     "http-headers": "^3.0.1",
     "moment": "~2.15.2",
     "pa11y-webservice": "^2.3.0",
